@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		038E56462891656300476D2C /* 2738.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038E56452891656300476D2C /* 2738.swift */; };
 		03A4A021288E6FF30084ED5F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A020288E6FF30084ED5F /* main.swift */; };
 		03A4A028288E707F0084ED5F /* 2420.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A027288E707F0084ED5F /* 2420.swift */; };
 		03A4A02C288E74890084ED5F /* 11382.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A02B288E74890084ED5F /* 11382.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		038E563C289156F500476D2C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		03A4A01B288E6FF30084ED5F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -25,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		038E563E289156F500476D2C /* 2738 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2738; sourceTree = BUILT_PRODUCTS_DIR; };
+		038E56452891656300476D2C /* 2738.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2738.swift; sourceTree = "<group>"; };
 		03A4A01D288E6FF30084ED5F /* Simple problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Simple problems"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A4A020288E6FF30084ED5F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		03A4A027288E707F0084ED5F /* 2420.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2420.swift; sourceTree = "<group>"; };
@@ -32,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		038E563B289156F500476D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03A4A01A288E6FF30084ED5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				03A4A01D288E6FF30084ED5F /* Simple problems */,
+				038E563E289156F500476D2C /* 2738 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +84,7 @@
 				03A4A020288E6FF30084ED5F /* main.swift */,
 				03A4A027288E707F0084ED5F /* 2420.swift */,
 				03A4A02B288E74890084ED5F /* 11382.swift */,
+				038E56452891656300476D2C /* 2738.swift */,
 			);
 			path = "Simple problems";
 			sourceTree = "<group>";
@@ -71,6 +92,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		038E563D289156F500476D2C /* 2738 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038E5644289156F500476D2C /* Build configuration list for PBXNativeTarget "2738" */;
+			buildPhases = (
+				038E563A289156F500476D2C /* Sources */,
+				038E563B289156F500476D2C /* Frameworks */,
+				038E563C289156F500476D2C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 2738;
+			productName = 2738;
+			productReference = 038E563E289156F500476D2C /* 2738 */;
+			productType = "com.apple.product-type.tool";
+		};
 		03A4A01C288E6FF30084ED5F /* Simple problems */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03A4A024288E6FF30084ED5F /* Build configuration list for PBXNativeTarget "Simple problems" */;
@@ -98,6 +136,9 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					038E563D289156F500476D2C = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					03A4A01C288E6FF30084ED5F = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -117,16 +158,25 @@
 			projectRoot = "";
 			targets = (
 				03A4A01C288E6FF30084ED5F /* Simple problems */,
+				038E563D289156F500476D2C /* 2738 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		038E563A289156F500476D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03A4A019288E6FF30084ED5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				03A4A021288E6FF30084ED5F /* main.swift in Sources */,
+				038E56462891656300476D2C /* 2738.swift in Sources */,
 				03A4A02C288E74890084ED5F /* 11382.swift in Sources */,
 				03A4A028288E707F0084ED5F /* 2420.swift in Sources */,
 			);
@@ -135,6 +185,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		038E5642289156F500476D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMC6ZX3X68;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		038E5643289156F500476D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMC6ZX3X68;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		03A4A022288E6FF30084ED5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -275,6 +347,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		038E5644289156F500476D2C /* Build configuration list for PBXNativeTarget "2738" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038E5642289156F500476D2C /* Debug */,
+				038E5643289156F500476D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03A4A018288E6FF30084ED5F /* Build configuration list for PBXProject "Simple problems" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

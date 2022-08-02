@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		034DB8BC28940FA00043D5C2 /* 4101.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034DB8BB28940FA00043D5C2 /* 4101.swift */; };
 		034DB8BE2894AED50043D5C2 /* 1157.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034DB8BD2894AED50043D5C2 /* 1157.swift */; };
+		034DB8C02898CDDA0043D5C2 /* 10814.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034DB8BF2898CDDA0043D5C2 /* 10814.swift */; };
 		038E56462891656300476D2C /* 2738.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038E56452891656300476D2C /* 2738.swift */; };
 		03A4A021288E6FF30084ED5F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A020288E6FF30084ED5F /* main.swift */; };
 		03A4A028288E707F0084ED5F /* 2420.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A027288E707F0084ED5F /* 2420.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		034DB8BB28940FA00043D5C2 /* 4101.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4101.swift; sourceTree = "<group>"; };
 		034DB8BD2894AED50043D5C2 /* 1157.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1157.swift; sourceTree = "<group>"; };
+		034DB8BF2898CDDA0043D5C2 /* 10814.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10814.swift; sourceTree = "<group>"; };
 		038E563E289156F500476D2C /* 2738 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2738; sourceTree = BUILT_PRODUCTS_DIR; };
 		038E56452891656300476D2C /* 2738.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2738.swift; sourceTree = "<group>"; };
 		03A4A01D288E6FF30084ED5F /* Simple problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Simple problems"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				03F0D56E2892296A0059FC5B /* 9086.swift */,
 				034DB8BB28940FA00043D5C2 /* 4101.swift */,
 				034DB8BD2894AED50043D5C2 /* 1157.swift */,
+				034DB8BF2898CDDA0043D5C2 /* 10814.swift */,
 			);
 			path = "Simple problems";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				034DB8BE2894AED50043D5C2 /* 1157.swift in Sources */,
 				03F0D56D28921EC80059FC5B /* 2754.swift in Sources */,
 				034DB8BC28940FA00043D5C2 /* 4101.swift in Sources */,
+				034DB8C02898CDDA0043D5C2 /* 10814.swift in Sources */,
 				038E56462891656300476D2C /* 2738.swift in Sources */,
 				03F0D569289213080059FC5B /* 2743.swift in Sources */,
 				03F0D56F2892296A0059FC5B /* 9086.swift in Sources */,

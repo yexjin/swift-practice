@@ -6,17 +6,24 @@ import UIKit
 =============================================*/
 let result: Int? = 1
 
+// 1) 강제 언래핑
 print(result!)
 
-print(result ?? "x")
-
-if let resultx = result {
-    print(resultx)
-}
-
+// 2) nil 값이 아닌지 확인 후 언래핑
 if result != nil {
     print(result!)
 }
+
+// 3) if let
+if let temp = result {
+    print(temp)
+} else {
+    print("값이 없습니다.")
+}
+
+// 4) 닐 코어레싱 (nil - coalesing)
+print(result ?? 5)
+
 
 
 
@@ -28,9 +35,8 @@ if result != nil {
 =============================================*/
 let result2: Bool = Bool.random()
 
-var isTrue: String = result2 ? "진실" : "거짓"
+var isTrue: String = result2 == true ? "진실" : "거짓"
 print(isTrue)
-
 
 
 
@@ -59,18 +65,17 @@ enum Weekday: String, CaseIterable {
 let today: Weekday = .random()
 
 switch today {
-case Weekday.monday:
-    print("월요일")
-case Weekday.tuesday:
-    print("화요일")
-case Weekday.wednesday:
-    print("수요일")
-case Weekday.thursday:
-    print("목요일")
-case Weekday.friday:
-    print("금요일")
+case .monday:
+    print(today.rawValue)
+case .tuesday:
+    print(today.rawValue)
+case .wednesday:
+    print(today.rawValue)
+case .thursday:
+    print(today.rawValue)
+case .friday:
+    print(today.rawValue)
 }
-
 
 
 
@@ -96,13 +101,13 @@ func closureFunc(_ closure: (Int, Int) -> Int) {
     print(result5)
 }
 
-var inputClosure = {(a: Int, b: Int) -> Int in
-    return a * b
-}
-var inputClosure2 : (Int, Int) -> Int = {$0 * $1}
+var inputClosure = { (first: Int, second: Int) -> Int in return first * second }
+var inputClosure2: (Int, Int) -> Int = { $0 * $1 }
 
 closureFunc(inputClosure)
 closureFunc(inputClosure2)
+
+
 
 
 
@@ -117,7 +122,7 @@ closureFunc(inputClosure2)
 =============================================*/
 let numbers: [Int] = [1,2,3,4,5,6,7,8,9,10]
 
-let oddNumbers: [Int] = numbers.filter{ (number: Int) -> Bool in return number % 2 == 1}
+let oddNumbers: [Int] = numbers.filter() { (number: Int) -> Bool in return number % 2 == 1 }
 print(oddNumbers)
 
 
@@ -134,9 +139,7 @@ class NumArr {
     var number: [Int] = [1,2,3,4,5,6,7,8,9,10]
     
     subscript(index: Int) -> Int {
-        get {
-            return number[index]
-        }
+        return number[index]
     }
 }
 
@@ -175,11 +178,10 @@ TODO:
  3) slime이 skeleton을 공격하여 skeleton의 hp를 출력하시오.
 =============================================*/
 class Monster {
-    private var level: Int
     private var mp: Int
     private var atk: Int
+    private var level: Int
     private lazy var hp: Int = level * 50
-    
     
     var damage: Int {
         get {
@@ -191,7 +193,6 @@ class Monster {
         self.level = level
         self.mp = mp
         self.atk = atk
-        
     }
     
     func attack(enemy: Monster) {

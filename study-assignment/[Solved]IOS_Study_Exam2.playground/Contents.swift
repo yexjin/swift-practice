@@ -26,8 +26,8 @@ print("이름: \(person.name), 나이 \(person.age), 출생년도 \(person.year)
 var tempArray: Array<Int> = [1,2,3,4,5,6,7,8,9,10]
 
 //for문 작성
-for i in 0...tempArray.count-1{
-    print(tempArray[i])
+for i in tempArray{
+    print(i)
 }
 
 //while문 작성
@@ -49,11 +49,11 @@ while(count<10){
 ============================================================*/
 
 /*
-배열 : 그냥 원소들을 묶은 것, 인덱스 0부터 시작
+배열 : 순서가 있다, index 존재, 동일한 타입만 저장, 중복 가능
  
-딕셔너리 : key와 value로 이루어진 배열
+딕셔너리 : 중복 허용 X, key와 value로 이루어짐, 순서 없음.
  
-세트 : 중복이 허용되지 않는 배열
+세트 : 중복이 허용되지 않음, 순서 없음.
  
  */
 
@@ -129,30 +129,17 @@ print( Lee == Kim )
 ============================================================*/
 
 // 1. 서브 스크립트
-//var alphabetArr: Array<String> = ["A", "B", "C", "D", "E", "F"]
-//
-//subscript(index: Int) -> String {
-//    get {
-//        alphabetArr[index]
-//    }
-//    set {
-//        alphabetArr[index] = alphabetArr[index].lowercased()
-//    }
-//}
-//
-//print(alphabetArr)
+var alphabetArr: Array<String> = ["A", "B", "C", "D", "E", "F"]
+alphabetArr[0...2] = ["a","b","c"]
+print(alphabetArr)
+
 
 // 2. 정식 문법
 var alphabetArr2: Array<String> = ["A", "B", "C", "D", "E", "F"]
 
-for i in 0...alphabetArr2.count-1 {
-    alphabetArr2[i] = alphabetArr2[i].lowercased()
-}
+alphabetArr2.replaceSubrange(0...2, with: ["a", "b", "c"])
 
 print(alphabetArr2)
-
-
-
 
 
 /*==========================================================
@@ -163,17 +150,12 @@ print(alphabetArr2)
 
 var pie = [3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8]
 
-var i = pie.count-1
-while(pie[i] != 9) {
-    i -= 1
+if let index = pie.lastIndex(of: 9) {
+    print(index)
+    pie.remove(at: index)
 }
 
-pie.remove(at: i)
-
 print(pie)
-
-
-
 
 
 /*==========================================================
@@ -189,6 +171,9 @@ class Time {
     func currentTime() -> () {
         print(Date())
     }
+    
+    // 싱글톤 객체가 다른 곳에서 재정의 되는 것을 막기 위해..?
+    private init() {}
 
 }
 
@@ -213,10 +198,8 @@ enum Company: String {
     case apple =    "애플"
 }
 
+let temp = Company.init(rawValue: "애플")
 
-var temp: Company = Company.apple
-
-print(temp)
 
 /*==========================================================
  [문제 10번]
@@ -228,12 +211,11 @@ var numbers: [Int?] = [1, nil, 2, nil, 3, nil, 4, nil, 5]
 
 for i in numbers {
     switch i {
-    case nil:
+    case .none:
         print("nil")
-    default:
+    case .some:
         print(i!)
     }
-    
 }
 
 
@@ -248,17 +230,6 @@ for i in numbers {
  numbers2를 numbers 배열을 이용하여 Int 타입의 배열로 다시 정리하여 출력하시오.
 ============================================================*/
 
-var numbers2: [Int] = []
-
-for i in numbers {
-    switch i {
-    case nil:
-        continue
-    default:
-        numbers2.append(i!)
-    }
-    
-}
-
+var numbers2: Array<Int> = numbers.compactMap{$0}
 
 print(numbers2)
